@@ -32,8 +32,8 @@ li {
     position: absolute;
     top: 1.3em;
     background: url("../img/CDS-logo.png") no-repeat;
-    width: 205px;
-    height: 49px;
+    width: 200px;
+    height: 57px;
 }
 
 .navbar-brand {
@@ -54,7 +54,7 @@ li {
 }
 
 #about img {
-    padding-bottom: 3em;
+    padding-bottom: 2em;
 }
 
 #about .name {
@@ -77,9 +77,11 @@ h4 {
     margin: 5em 0 3em 0;
 }
 
+/*
 ul {
     padding: 0 3em;
 }
+*/
 
 li {
     line-height: 3em;
@@ -214,16 +216,19 @@ li {
 }
 
 @media screen and (max-width: 1199px) {
+
     /*this will affect anything under 1199px*/
     .navbar-brand {
         margin-left: 1em;
     }
+
     #footer {
         padding: auto 3em;
     }
 }
 
 @media screen and (max-width: 600px) {
+
     /*this will affect anything under 1199px*/
     h3 {
         line-height: 1.5em;
