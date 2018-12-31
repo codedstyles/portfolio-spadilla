@@ -26,7 +26,7 @@ li {
 
 .work-links {
     color: #000;
-    position: absolute;
+    margin-left: 10em;
     left: 10em;
     font-family: 'Arial', san-serif;
     font-size: 2em;
