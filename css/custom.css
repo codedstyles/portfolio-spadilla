@@ -24,7 +24,7 @@ li {
     font-size: 1.3em;
 }
 
-#work a {
+.work-links {
     color: #000;
     position: absolute;
     left: 10em;
