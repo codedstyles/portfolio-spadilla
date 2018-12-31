@@ -29,7 +29,11 @@ li {
     align-content: center;
     left: 10em;
     font-family: 'Arial', san-serif;
-    font-size: 2em;
+    font-size: .8em;
+}
+
+.work-links: hover {
+    color: #000;
 }
 
 
