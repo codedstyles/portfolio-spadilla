@@ -26,6 +26,8 @@ li {
 
 a {
     color: #000;
+    position: relative;
+    right: 10em;
 }
 
 
