@@ -255,6 +255,6 @@ li {
 @media screen and (max-width: 300px) {
 
     .about-me-pic {
-        padding-left: 1000em;
+        background: #d1003e;
     }
 }
