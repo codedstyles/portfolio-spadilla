@@ -259,6 +259,7 @@ li {
 @media screen and (max-width: 300px) {
 
     #skills {
-        background: #d1003e;
+        padding-right;
+        2em;
     }
 }
