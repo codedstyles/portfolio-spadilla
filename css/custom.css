@@ -40,11 +40,6 @@ li {
     margin: 0 auto;
 }
 
-.about-me-pic {
-    text-align: center;
-    padding-bottom: 2em;
-}
-
 
 /*NAV
 =========================*/
@@ -253,12 +248,5 @@ li {
     /*this will affect anything under 1199px*/
     h3 {
         line-height: 1.5em;
-    }
-}
-
-@media screen and (max-width: 300px) {
-
-    #skills {
-        padding-right: 2em;
     }
 }
