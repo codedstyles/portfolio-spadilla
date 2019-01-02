@@ -251,3 +251,10 @@ li {
         line-height: 1.5em;
     }
 }
+
+@media screen and (max-width: 300px) {
+
+    .about-me-pic {
+        padding-left: 1000em;
+    }
+}
