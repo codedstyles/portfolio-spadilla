@@ -36,6 +36,10 @@ li {
     color: #000;
 }
 
+#center {
+    margin: 0 auto;
+}
+
 .about-me-pic {
     text-align: center;
     padding-bottom: 2em;
