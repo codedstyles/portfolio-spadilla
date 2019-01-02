@@ -258,7 +258,7 @@ li {
 
 @media screen and (max-width: 300px) {
 
-    .about-me-pic {
+    #skills {
         background: #d1003e;
     }
 }
