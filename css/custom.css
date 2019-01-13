@@ -25,15 +25,16 @@ li {
 }
 
 .work-links {
-    color: #000;
-    align-content: center;
-    left: 10em;
-    font-family: 'Arial', san-serif;
+    color: #d1003e;
+    font-family: 'Helvetica', san-serif;
     font-size: .8em;
+    position: absolute;
+    padding-top: .5em;
+    margin-left: 23em;
 }
 
-.work-links: hover {
-    color: #000;
+.work-links:hover {
+    color: #d1003e;
 }
 
 #center {
@@ -244,5 +245,12 @@ li {
     /*this will affect anything under 1199px*/
     h3 {
         line-height: 1.5em;
+    }
+}
+
+@media screen and (max-width: 491px) {
+
+    .work-links {
+        margin-left: 19em;
     }
 }
