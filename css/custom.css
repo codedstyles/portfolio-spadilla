@@ -254,3 +254,10 @@ li {
         margin-left: 19em;
     }
 }
+
+@media screen and (max-width: 410px) {
+
+    .work-links {
+        margin-left: 18em;
+    }
+}
