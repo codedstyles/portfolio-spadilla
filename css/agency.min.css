@@ -101,6 +101,13 @@ img::-moz-selection {
     background: 0 0
 }
 
+hr.divider {
+    max-width: 3.25rem;
+    border-width: .2rem;
+    border-color: #fed136;
+    ;
+}
+
 #mainNav {
     background-color: #212529
 }
