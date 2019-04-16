@@ -109,6 +109,7 @@ img::-moz-selection {
 }
 
 hr.divider {
+    padding-top: 3em;
     max-width: 3.25rem;
     border-width: .2rem;
     border-color: #fed136;
