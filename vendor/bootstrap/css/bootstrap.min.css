@@ -2709,7 +2709,7 @@ textarea.form-control.is-invalid {
 }
 
 .btn:hover {
-    color: #212529;
+    color: #fec503;
     text-decoration: none
 }
 
@@ -10890,9 +10890,9 @@ button.bg-dark:hover {
     text-transform: lowercase !important
 }
 
-.text-uppercase {
+/*.text-uppercase {
     text-transform: uppercase !important
-}
+}*/
 
 .text-capitalize {
     text-transform: capitalize !important
