@@ -387,7 +387,6 @@ header.masthead .intro-text .intro-heading {
     font-size: 14px;
     letter-spacing: 1px;
     display: inline-block;
-    margin-left: 20px;
     padding: 20px 0;
     width: 250px;
     border-radius: 5px;
@@ -436,21 +435,17 @@ header.masthead .intro-text .intro-heading {
     color: #000000;
 }
 
-/*
-.btn-primary:active,
-.btn-primary:focus,
-.btn-primary:hover {
-    background-color: #fec810 !important;
-    border-color: #fec810 !important;
-    color: white;
-}
+@media (max-width: 950px) {
+    #call-out {
+        padding: 40px 20px;
+        align-items: center;
+    }
 
-.btn-primary:active,
-.btn-primary:focus {
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
-    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+    .cta .cta-btn {
+        vertical-align: middle !important;
+        width: 250px;
+    }
 }
-*/
 
 /*--------------------------------------------------------------
 # Portfolio
