@@ -569,7 +569,6 @@ header.masthead .intro-text .intro-heading {
 }
 
 
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -620,4 +619,68 @@ ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
     background-color: #ffffff;
     color: #fed136;
+}
+
+/*--------------------------------------------------------------
+# Extras
+--------------------------------------------------------------*/
+
+
+header.masthead-case-studies {
+    text-align: center;
+    color: #fff;
+    background-image: url(../img/header-CS-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 15%
+}
+
+.title-case-studies {
+    margin-top: -0.5em;
+    text-align: center;
+    color: #212529
+}
+
+.subtitles {
+    font-size: 1.5em;
+    color: #fec503;
+    padding-top: 1em
+}
+
+.par-style {
+    padding-top: .8em;
+    margin-bottom: 3em;
+    color: dimgrey;
+    text-align: center
+}
+
+.img-spacing {
+    padding: 1.5em 0 1.5em 0;
+}
+
+.bottom-spacing {
+    margin-bottom: 3em;
+}
+
+.btn-style {
+    font-style: normal
+}
+
+.bottom-link-space {
+    margin-bottom: 5em
+}
+
+.btn-right-alignm {
+    position: absolute;
+    right: 1em;
+}
+
+.btn-spacing {
+    margin-bottom: 3em;
+}
+
+footer {
+    margin-top: 2em
 }
