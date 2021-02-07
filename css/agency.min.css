@@ -3,6 +3,13 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
+
+
+/*
+Primary yellow: #fec503
+Dark grey: #212529
+*/
+
 body {
     overflow-x: hidden;
     background-color: #ffffff;
@@ -38,6 +45,7 @@ a:hover {
 }
 
 h2 {
+    font-size: 48px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -47,8 +55,9 @@ h2,
 h3,
 h5,
 h6 {
-    font-weight: 700;
-    font-family: 'Alegreya', serif;
+    font-weight: 500;
+    font-family: 'Merriweather',
+        serif;
 }
 
 h4 {
@@ -70,7 +79,7 @@ section h3.section-subheading {
     font-style: italic;
     margin-bottom: 75px;
     text-transform: none;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*
@@ -94,29 +103,48 @@ section h3.section-subheading {
     margin-top: 2em
 }
 
-.btn-xl {
-    font-size: 18px;
-    padding: 20px 40px
-}
-
-.btn-primary {
+.btn-hero {
     font-weight: 900;
+    font-size: 18px;
+    padding: 20px 40px;
     background-color: #fec503;
-    border-color: #fec503
+    padding: 20px 50px;
+    border-radius: 5px;
+    margin-top: -20px;
 }
 
-.btn-secondary {
+.btn-hero:active,
+.btn-hero:focus,
+.btn-hero:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #fed136;
+}
+
+.btn-style {
+    font-style: normal
+}
+
+.btn-align-left {
+    margin-left: 42%
+}
+
+.bottom-link-space {
+    margin-bottom: 5em
+}
+
+/*.btn-secondary {
     background-color: #fff;
     border-color: #fed136;
     color: #fed136;
+}*/
+
+.pieces-link {
+    color: #fec810;
 }
 
-.btn-primary:active,
-.btn-primary:focus,
-.btn-primary:hover {
-    background-color: rgba(0, 0, 0, .05);
-    border-color: #fec810 !important;
-    color: #ffffff;
+.pieces-link:hover {
+    color: #212529;
 }
 
 /*0 0 0 0 rgba(254, 209, 55, .5);*/
@@ -179,7 +207,8 @@ hr.divider {
     padding: .75em 0;
     letter-spacing: 1px;
     color: #fff;
-    font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    text-transform: lowercase;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
@@ -235,49 +264,24 @@ header.masthead {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
-    background-size: cover
+    background-size: cover;
+    height: 700px;
+    padding-top: 70px;
 }
 
-header.masthead .intro-text {
-    padding-top: 150px;
-    padding-bottom: 100px
-}
-
-header.masthead .intro-text .intro-lead-in {
-    font-size: 22px;
-    line-height: 22px;
-    margin-bottom: 25px;
-    font-family: 'Alegreya', serif;
-}
-
-header.masthead .intro-text .intro-heading {
-    font-size: 50px;
-    font-weight: 700;
+header.masthead .intro-welcome {
+    font-size: 40px;
     line-height: 50px;
-    margin-bottom: 25px;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Alegreya', serif;
+    padding: 160px 0 10px 0;
 }
 
-@media (min-width:768px) {
-    header.masthead .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px
-    }
-
-    header.masthead .intro-text .intro-lead-in {
-        font-size: 35px;
-        line-height: 40px;
-        margin-bottom: 25px;
-        font-family: 'Dosis', sans-serif;
-    }
-
-    header.masthead .intro-text .intro-heading {
-        font-size: 70px;
-        font-weight: 700;
-        line-height: 75px;
-        margin-bottom: 50px;
-        font-family: 'Alegreya', serif;
-    }
+header.masthead .intro-me {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 40px;
+    padding-bottom: 40px;
+    font-family: 'Dosis', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -378,7 +382,7 @@ header.masthead .intro-text .intro-heading {
     font-weight: 900;
 }
 
-.cta .cta-btn {
+.cta .mid-cta {
     /*    background: rgba(0, 0, 0, .05);*/
     background-color: #fec810 !important;
     color: #ffffff;
@@ -391,26 +395,30 @@ header.masthead .intro-text .intro-heading {
     width: 250px;
     border-radius: 5px;
     transition: 0.4s;
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.2);
-    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.2);
+    background: #434343;
+    letter-spacing: 1px;
     /*    border: 2px solid #fed136;*/
 }
 
-.cta .cta-btn:hover,
-.cta .cta-btn:active,
-.cta .cta-btn:focus {
-    background: #434343;
-    letter-spacing: 1px;
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
-    transition: all 0.4s ease 0s;
+.cta .mid-cta:hover,
+.cta .mid-cta:active,
+.cta .mid-cta:focus {
+    -webkit-box-shadow: 0px 1px 25px -2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.2);
 }
 
-.btn-primary {
-    background-color: #fed136;
-    border-color: #fed136;
+.email-link {
+    color: #fec503;
+}
+
+.email-link:hover {
+    color: #212529
+}
+
+.text-muted {
+    padding-bottom: 40px;
+    font-size: 14px
 }
 
 @media (max-width: 1024px) {
@@ -429,10 +437,11 @@ header.masthead .intro-text .intro-heading {
 
 #call-out {
     background-color: #ffffff;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%23000000' fill-opacity='0.06'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='0.55' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(10) translate(-900 -675)'%3E%3Cuse fill='%23fafafa' href='%23s' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='2'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(10) translate(-900 -675)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(10) translate(-900 -675)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(10) translate(-900 -675)'%3E%3Cg fill='%23e5e5e5'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(10) translate(-900 -675)'%3E%3Cg fill='%23ffffff'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23e0e0e0'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(10) translate(-900 -675)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(10) translate(-900 -675)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(10) translate(-900 -675)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
     padding: 60px 200px;
     margin: 15px 0 150px 0;
-    color: #000000;
 }
 
 @media (max-width: 950px) {
@@ -475,12 +484,6 @@ header.masthead .intro-text .intro-heading {
     border-radius: 50px;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-    color: #fff;
-    background: #f03c02;
-}
-
 .portfolio #portfolio-flters li:last-child {
     margin-right: 0;
 }
@@ -497,7 +500,7 @@ header.masthead .intro-text .intro-heading {
     bottom: 0;
     z-index: 3;
     transition: all ease-in-out 0.3s;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.6);
     padding: 15px;
 }
 
@@ -505,11 +508,11 @@ header.masthead .intro-text .intro-heading {
     font-size: 18px;
     color: #fff;
     font-weight: 600;
-    color: #2b2320;
+    color: #fec503;
 }
 
 .portfolio .portfolio-item .portfolio-info p {
-    color: #65534c;
+    color: #fec503;
     font-size: 14px;
     margin-bottom: 0;
 }
@@ -520,12 +523,7 @@ header.masthead .intro-text .intro-heading {
     right: 40px;
     font-size: 24px;
     top: calc(50% - 18px);
-    color: #483b36;
-}
-
-.portfolio .portfolio-item .portfolio-info .preview-link:hover,
-.portfolio .portfolio-item .portfolio-info .details-link:hover {
-    color: #fed136;
+    color: #fec503;
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
@@ -569,7 +567,6 @@ header.masthead .intro-text .intro-heading {
 --------------------------------------------------------------*/
 
 footer {
-    margin-top: 150px;
     padding: 40px 0;
     text-align: center;
     background-color: #000;
@@ -635,20 +632,20 @@ header.masthead-case-studies {
 .title-case-studies {
     margin-top: -0.5em;
     text-align: center;
-    color: #212529
+    color: #212529;
 }
 
 .subtitles {
     font-size: 1.5em;
-    color: #fec503;
-    padding-top: 1em
+    color: #212529;
+    padding-top: 1em;
 }
 
 .par-style {
     padding-top: .8em;
     margin-bottom: 3em;
     color: dimgrey;
-    text-align: center
+    text-align: center;
 }
 
 .img-spacing {
@@ -659,23 +656,6 @@ header.masthead-case-studies {
     margin-bottom: 3em;
 }
 
-.btn-style {
-    font-style: normal
-}
-
-.bottom-link-space {
-    margin-bottom: 5em
-}
-
-.btn-right-alignm {
-    position: absolute;
-    right: 1em;
-}
-
-.btn-spacing {
-    margin-bottom: 3em;
-}
-
 footer {
-    margin-top: 2em
+    margin-top: 2em;
 }
